@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-const storyText = '気温, :inserty: で外は寒かった。 :insertx: は出かけた。 :insertz: に着いた。:insertx: 体重50キロの :insertx: は驚いたが、 customName は驚かなかった。 :insertz: にはよくあることだった。';
+const storyText = '気温, :inserty: で外は寒かった。 :insertx: は出かけた。 :insertz: に着いた。体重50キロの :insertx: は驚いたが、 Bob は驚かなかった。 :insertz: にはよくあることだった。';
 const insertX = ['ミッキーマウス', 'スヌーピー', 'サンタクロース'];
 const insertY = ['-5度', '9度', '-30度'];
 const insertZ = ['ディズニーランド', '千駄ヶ谷', '小平'];
@@ -24,6 +24,7 @@ function result() {
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':insertz:',zItem);
   newStory = newStory.replace(':insertz:',zItem);
 
   if (customName.value !== '') {
