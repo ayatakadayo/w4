@@ -33,8 +33,8 @@ function result() {
   }
   
   if (document.getElementById("us").checked) {
-    const weight = `${Math.round(110*0.0714286)} ポンド`;
-    const temperature =  `${華氏 Math.round((40-32) * 5 / 9)} 度`;
+    const weight = `${Math.round(50*2.2046)} ポンド`;
+    const temperature =  `${華氏 Math.round((-1-32) / 1.8)} 度`;
     newStory = newStory.replace('摂氏-1度', temperature);
     newStory = newStory.replace('50キロ', weight);
   }
